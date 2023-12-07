@@ -1,438 +1,438 @@
 <!DOCTYPE html><html lang="en"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Traced's bio page! </title>
-
-<meta property="og:title" content="https://traced.lol">
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://traced.lol">
-<meta property="og:image" content="images/vtLKgLS.png">
-<meta property="og:description" content="Personal private bio site.">
-<meta name="theme-color" content="#FFFFFF">
-<style>
-
-
-  body {
-    background: url('images/b87b593b2b67406b0c1f375b82871979.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-    display: flex;
-    align-items: center;
-    overflow: hidden; /* Hide scrollbars */
-    justify-content: center;
-    height: 100vh; /* Viewport height */
-    margin: 0;
-  }
- 
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2; /* High z-index to ensure it's above other elements */
-  }
-  
-
-  .wrapper {
-            text-align: center;
-        }
-
-        .wrapper h1 {
-            color: #fff;
-            font-size: 34px;
-            font-weight: 700;
-            font-family: "Josefin Sans", sans-serif;
-            background: linear-gradient(to right, #6789cc 10%, #ffffff 50%);
-            background-size: auto auto;
-            background-clip: border-box;
-            background-size: 200% auto;
-            color: #fff;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: textclip 1.5s linear infinite;
-            display: inline-block;
-        }
-
-        @keyframes textclip {
-            to {
-                background-position: 200% center;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traced's bio page! </title>
+    
+    <meta property="og:title" content="https://traced.lol">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://traced.lol">
+    <meta property="og:image" content="images/vtLKgLS.png">
+    <meta property="og:description" content="Personal private bio site.">
+    <meta name="theme-color" content="#FFFFFF">
+    <style>
+    
+    
+      body {
+        background: url('images/vagabond.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+        display: flex;
+        align-items: center;
+        overflow: hidden; /* Hide scrollbars */
+        justify-content: center;
+        height: 100vh; /* Viewport height */
+        margin: 0;
+      }
+     
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2; /* High z-index to ensure it's above other elements */
+      }
+      
+    
+      .wrapper {
+                text-align: center;
             }
+    
+            .wrapper h1 {
+                color: #fff;
+                font-size: 34px;
+                font-weight: 700;
+                font-family: "Josefin Sans", sans-serif;
+                background: linear-gradient(to right, #6789cc 10%, #ffffff 50%);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                color: #fff;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: textclip 1.5s linear infinite;
+                display: inline-block;
+            }
+    
+            @keyframes textclip {
+                to {
+                    background-position: 200% center;
+                }
+            }
+    
+    
+      .click-text {
+        color: white;
+        font-size: 2em;
+        animation: glow 0.5s ease-in-out infinite alternate;
+        font-family: 'Sintony', sans-serif;
+      }
+    
+      .description-text {
+        color:white;
+        font-family: 'Noto Sans Mono', monospace;
+      }
+    
+    
+    
+      .fade-out {
+        animation: fadeOut 1s forwards;
+      }
+      
+      .profile-container {
+        text-align: center;
+        position: relative;
+        background-color:black;
+        padding: 20px;
+        border-radius: 15px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow effect */
+        max-width: 340px; /* Maximum width */
+        width: 100%;
+        
+      }
+      .profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #ffffff;
+        display: block;
+        margin: 20px auto;
+      }
+      .profile-info {
+        margin: 10px;
+      }
+      .social-icons {
+        list-style: none;
+        padding: 0;
+      }
+      .social-icons li {
+        display: inline;
+        margin: 0 10px;
+      }
+      .social-icons li a {
+        color: white;
+        text-decoration: none; /* Remove underline from links */
+      }
+      .social-icons li a:hover {
+        text-decoration: underline; /* Adds an underline on hover */
+      }
+      .ip-display {
+        margin-top: 20px;
+      }
+      .website-link {
+        position: absolute;
+        bottom: -30px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+      }
+      .line {
+          display: block;
+          width: 100px;
+          height: 2px;
+          background-color: #fff;
+          margin-top: 8px;
+          margin-left: auto;
+          margin-right: auto;
         }
-
-
-  .click-text {
-    color: white;
-    font-size: 2em;
-    animation: glow 0.5s ease-in-out infinite alternate;
-    font-family: 'Sintony', sans-serif;
-  }
-
-  .description-text {
-    color:white;
-    font-family: 'Noto Sans Mono', monospace;
-  }
-
-
-
-  .fade-out {
-    animation: fadeOut 1s forwards;
-  }
-  
-  .profile-container {
-    text-align: center;
-    position: relative;
-    background-color:black;
-    padding: 20px;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow effect */
-    max-width: 340px; /* Maximum width */
-    width: 100%;
+       
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+        }
+        to {
+          text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white;
+        }
+      }
     
-  }
-  .profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #ffffff;
-    display: block;
-    margin: 20px auto;
-  }
-  .profile-info {
-    margin: 10px;
-  }
-  .social-icons {
-    list-style: none;
-    padding: 0;
-  }
-  .social-icons li {
-    display: inline;
-    margin: 0 10px;
-  }
-  .social-icons li a {
-    color: white;
-    text-decoration: none; /* Remove underline from links */
-  }
-  .social-icons li a:hover {
-    text-decoration: underline; /* Adds an underline on hover */
-  }
-  .ip-display {
-    margin-top: 20px;
-  }
-  .website-link {
-    position: absolute;
-    bottom: -30px; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;
-  }
-  .line {
-      display: block;
-      width: 100px;
-      height: 2px;
-      background-color: #fff;
-      margin-top: 8px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-   
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
-    }
-    to {
-      text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white;
-    }
-  }
-
-  @keyframes fadeOut {
-    to {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
-
-</style>
-</head>
-
-<body>
-  <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous">
-<div class="profile-container">
-  <div id="overlay" class="overlay">
-    <div class="click-text"> ⎛click anywhere⎞ </div>
-  </div>
-  <img src="images/tracedlol-pfp.png" alt="Profile Picture" class="profile-picture">
-  <div class="profile-info">
-    <div class="wrapper">
-      <h1 style="margin-left: 25px;">Traced</h1> <img src="images/tJo8M2c.gif" style="width: 25px; height: 25px; margin-left: 10px;">
-  </div>
-  <div class="description-text">une pas deux</div>
-  </div>
-  <ul class="social-icons">
-    <!-- Replace # with the actual links -->
-    <li><a href="https://discord.com/users/693601461447163945" target="_blank"><i class="fab fa-discord"></i></a></li>
-  <li><a href="https://github.com/traced-dev" target="_blank"><i class="fab fa-github"></i></a></li>
-  <li><a href="https://open.spotify.com/playlist/503LI1hH4WiYLROVlluMuw?si=6e436c230f244f28" target="_blank"><i class="fab fa-spotify"></i></a></li>
-  </ul>
-
-  <div class="line"></div>
-  <div class="ip-display">
-    <!-- IP display logic will go here. But remember, this requires server-side scripting. -->
-    <p>https://traced.lol</p> <span id="user-ip"></span>
-  </div>
-  <div class="website-link"></div>
-  </div>
-
-
-<!-- fonts -->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Sintony:wght@700&amp;display=swap" rel="stylesheet">
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&amp;display=swap" rel="stylesheet">
-
-<audio id="background-music" src="media/MORAD__GIMS_-_SEYA_Official_Video_192_kbps.mp3" preload="auto"></audio>
-
-
-
-<script>
-  // JavaScript to handle the click event on the overlay
-  const overlay = document.getElementById('overlay');
-  overlay.addEventListener('click', function() {
-    // Play the music
-    const audio = document.getElementById('background-music');
-    audio.play();
+      @keyframes fadeOut {
+        to {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
     
-    // Add the fade-out class to trigger the fade-out animation
-    this.classList.add('fade-out');
+    </style>
+    </head>
     
-    // Remove the overlay from the DOM after the animation ends
-    setTimeout(() => {
-      overlay.remove();
-    }, 1000); // Corresponds to the animation duration
-  });
-</script>
-
-
-<script type="text/javascript">
-  // <![CDATA[
-  var colour = "#ffffff";
-  var sparkles = 120;
-
-
-
-
-
-  <!--everything below is sparkle effects, wait for the next comment tag-->
-
-
-
-
-
-
-  var x = ox = 400;
-var y = oy = 300;
-var swide = 800;
-var shigh = 600;
-var sleft = sdown = 0;
-var tiny = new Array();
-var star = new Array();
-var starv = new Array();
-var starx = new Array();
-var stary = new Array();
-var tinyx = new Array();
-var tinyy = new Array();
-var tinyv = new Array();
-
-window.onload = function() {
-if (document.getElementById) {
-var i, rats, rlef, rdow;
-for (var i = 0; i < sparkles; i++) {
-  var rats = createDiv(3, 3);
-  rats.style.visibility = "hidden";
-  document.body.appendChild(tiny[i] = rats);
-  starv[i] = 0;
-  tinyv[i] = 0;
-  var rats = createDiv(5, 5);
-  rats.style.backgroundColor = "transparent";
-  rats.style.visibility = "hidden";
-  var rlef = createDiv(1, 5);
-  var rdow = createDiv(5, 1);
-  rats.appendChild(rlef);
-  rats.appendChild(rdow);
-  rlef.style.top = "2px";
-  rlef.style.left = "0px";
-  rdow.style.top = "0px";
-  rdow.style.left = "2px";
-  document.body.appendChild(star[i] = rats);
-}
-set_width();
-sparkle();
-}
-};
-
-function sparkle() {
-var c;
-if (x != ox || y != oy) {
-ox = x;
-oy = y;
-for (c = 0; c < sparkles; c++) {
-  if (!starv[c]) {
-    star[c].style.left = (starx[c] = x) + "px";
-    star[c].style.top = (stary[c] = y) + "px";
-    star[c].style.clip = "rect(0px, 5px, 5px, 0px)";
-    star[c].style.visibility = "visible";
-    starv[c] = 50;
-    break;
-  }
-}
-}
-for (c = 0; c < sparkles; c++) {
-if (starv[c]) update_star(c);
-if (tinyv[c]) update_tiny(c);
-}
-setTimeout("sparkle()", 25);
-}
-
-function update_star(i) {
-if (--starv[i] == 25) star[i].style.clip = "rect(1px, 4px, 4px, 1px)";
-if (starv[i]) {
-stary[i] += 1 + Math.random() * 3;
-if (stary[i] < shigh + sdown) {
-  star[i].style.top = stary[i] + "px";
-  starx[i] += (i % 15 - 0) / 5;
-  star[i].style.left = starx[i] + "px";
-}
-else {
-  star[i].style.visibility = "hidden";
-  starv[i] = 0;
-  return;
-}
-}
-else {
-tinyv[i] = 50;
-tiny[i].style.top = (tinyy[i] = stary[i]) + "px";
-tiny[i].style.left = (tinyx[i] = starx[i]) + "px";
-tiny[i].style.width = "2px";
-tiny[i].style.height = "2px";
-star[i].style.visibility = "hidden";
-tiny[i].style.visibility = "visible";
-}
-}
-
-function update_tiny(i) {
-if (--tinyv[i] == 25) {
-tiny[i].style.width = "1px";
-tiny[i].style.height = "1px";
-}
-if (tinyv[i]) {
-tinyy[i] += 1 + Math.random() * 3;
-if (tinyy[i] < shigh + sdown) {
-  tiny[i].style.top = tinyy[i] + "px";
-  tinyx[i] += (i % 5 - 2) / 5;
-  tiny[i].style.left = tinyx[i] + "px";
-}
-else {
-  tiny[i].style.visibility = "hidden";
-  tinyv[i] = 0;
-  return;
-}
-}
-else tiny[i].style.visibility = "hidden";
-}
-
-document.onmousemove = mouse;
-
-function mouse(e) {
-set_scroll();
-y = (e) ? e.pageY : event.y + sdown;
-x = (e) ? e.pageX : event.x + sleft;
-}
-
-function set_scroll() {
-if (typeof (self.pageYOffset) == "number") {
-sdown = self.pageYOffset;
-sleft = self.pageXOffset;
-}
-else if (document.body.scrollTop || document.body.scrollLeft) {
-sdown = document.body.scrollTop;
-sleft = document.body.scrollLeft;
-}
-else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
-sleft = document.documentElement.scrollLeft;
-sdown = document.documentElement.scrollTop;
-}
-else {
-sdown = 0;
-sleft = 0;
-}
-}
-
-window.onresize = set_width;
-
-function set_width() {
-if (typeof (self.innerWidth) == "number") {
-swide = self.innerWidth;
-shigh = self.innerHeight;
-}
-else if (document.documentElement && document.documentElement.clientWidth) {
-swide = document.documentElement.clientWidth;
-shigh = document.documentElement.clientHeight;
-}
-else if (document.body.clientWidth) {
-swide = document.body.clientWidth;
-shigh = document.body.clientHeight;
-}
-}
-
-function createDiv(height, width) {
-var div = document.createElement("div");
-div.style.position = "absolute";
-div.style.height = height + "px";
-div.style.width = width + "px";
-div.style.overflow = "hidden";
-div.style.backgroundColor = colour;
-return div;
-}
-// ]]>
-</script>
-
-
-
-
-<!--everything below is now essential, everything up was sparkles-->
-
-<script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
-
-<script>
-  const originalTitle = "une pas deux ";
-  let index = 0;
-
-  function animateTitle() {
-    const title = document.title;
-    if (index < originalTitle.length) {
-      document.title = title + originalTitle[index];
-      index++;
-      setTimeout(animateTitle, 200);
-    } else {
-      setTimeout(resetTitle, 1000);
+    <body>
+      <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous">
+    <div class="profile-container">
+      <div id="overlay" class="overlay">
+        <div class="click-text"> ⎛click anywhere⎞ </div>
+      </div>
+      <img src="images/tracedlol-pfp.png" alt="Profile Picture" class="profile-picture">
+      <div class="profile-info">
+        <div class="wrapper">
+          <h1 style="margin-left: 25px;">Traced</h1> <img src="images/tJo8M2c.gif" style="width: 25px; height: 25px; margin-left: 10px;">
+      </div>
+      <div class="description-text">une pas deux</div>
+      </div>
+      <ul class="social-icons">
+        <!-- Replace # with the actual links -->
+        <li><a href="https://discord.com/users/693601461447163945" target="_blank"><i class="fab fa-discord"></i></a></li>
+        <li><a href="https://www.youtube.com/@tr4cedd" target="_blank"><i class="fab fa-youtube"></i></a></li>
+      <li><a href="https://github.com/traced-dev" target="_blank"><i class="fab fa-github"></i></a></li>
+      </ul>
+    
+      <div class="line"></div>
+      <div class="ip-display">
+        <!-- IP display logic will go here. But remember, this requires server-side scripting. -->
+        <p>https://traced.lol</p> <span id="user-ip"></span>
+      </div>
+      <div class="website-link"></div>
+      </div>
+    
+    
+    <!-- fonts -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@700&amp;display=swap" rel="stylesheet">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&amp;display=swap" rel="stylesheet">
+    
+    <audio id="background-music" src="media/HOME-resonance-(432 hz)-(slowed + reverb).mp3" preload="auto"></audio>
+    
+    
+    
+    <script>
+      // JavaScript to handle the click event on the overlay
+      const overlay = document.getElementById('overlay');
+      overlay.addEventListener('click', function() {
+        // Play the music
+        const audio = document.getElementById('background-music');
+        audio.play();
+        
+        // Add the fade-out class to trigger the fade-out animation
+        this.classList.add('fade-out');
+        
+        // Remove the overlay from the DOM after the animation ends
+        setTimeout(() => {
+          overlay.remove();
+        }, 1000); // Corresponds to the animation duration
+      });
+    </script>
+    
+    
+    <script type="text/javascript">
+      // <![CDATA[
+      var colour = "#ffffff";
+      var sparkles = 120;
+    
+    
+    
+    
+    
+      <!--everything below is sparkle effects, wait for the next comment tag-->
+    
+    
+    
+    
+    
+    
+      var x = ox = 400;
+    var y = oy = 300;
+    var swide = 800;
+    var shigh = 600;
+    var sleft = sdown = 0;
+    var tiny = new Array();
+    var star = new Array();
+    var starv = new Array();
+    var starx = new Array();
+    var stary = new Array();
+    var tinyx = new Array();
+    var tinyy = new Array();
+    var tinyv = new Array();
+    
+    window.onload = function() {
+    if (document.getElementById) {
+    var i, rats, rlef, rdow;
+    for (var i = 0; i < sparkles; i++) {
+      var rats = createDiv(3, 3);
+      rats.style.visibility = "hidden";
+      document.body.appendChild(tiny[i] = rats);
+      starv[i] = 0;
+      tinyv[i] = 0;
+      var rats = createDiv(5, 5);
+      rats.style.backgroundColor = "transparent";
+      rats.style.visibility = "hidden";
+      var rlef = createDiv(1, 5);
+      var rdow = createDiv(5, 1);
+      rats.appendChild(rlef);
+      rats.appendChild(rdow);
+      rlef.style.top = "2px";
+      rlef.style.left = "0px";
+      rdow.style.top = "0px";
+      rdow.style.left = "2px";
+      document.body.appendChild(star[i] = rats);
     }
-  }
-
-  function resetTitle() {
-    document.title = " ";
-    index = 0;
-    setTimeout(animateTitle, 1000);
-  }
-
-  animateTitle();
-</script>
+    set_width();
+    sparkle();
+    }
+    };
+    
+    function sparkle() {
+    var c;
+    if (x != ox || y != oy) {
+    ox = x;
+    oy = y;
+    for (c = 0; c < sparkles; c++) {
+      if (!starv[c]) {
+        star[c].style.left = (starx[c] = x) + "px";
+        star[c].style.top = (stary[c] = y) + "px";
+        star[c].style.clip = "rect(0px, 5px, 5px, 0px)";
+        star[c].style.visibility = "visible";
+        starv[c] = 50;
+        break;
+      }
+    }
+    }
+    for (c = 0; c < sparkles; c++) {
+    if (starv[c]) update_star(c);
+    if (tinyv[c]) update_tiny(c);
+    }
+    setTimeout("sparkle()", 25);
+    }
+    
+    function update_star(i) {
+    if (--starv[i] == 25) star[i].style.clip = "rect(1px, 4px, 4px, 1px)";
+    if (starv[i]) {
+    stary[i] += 1 + Math.random() * 3;
+    if (stary[i] < shigh + sdown) {
+      star[i].style.top = stary[i] + "px";
+      starx[i] += (i % 15 - 0) / 5;
+      star[i].style.left = starx[i] + "px";
+    }
+    else {
+      star[i].style.visibility = "hidden";
+      starv[i] = 0;
+      return;
+    }
+    }
+    else {
+    tinyv[i] = 50;
+    tiny[i].style.top = (tinyy[i] = stary[i]) + "px";
+    tiny[i].style.left = (tinyx[i] = starx[i]) + "px";
+    tiny[i].style.width = "2px";
+    tiny[i].style.height = "2px";
+    star[i].style.visibility = "hidden";
+    tiny[i].style.visibility = "visible";
+    }
+    }
+    
+    function update_tiny(i) {
+    if (--tinyv[i] == 25) {
+    tiny[i].style.width = "1px";
+    tiny[i].style.height = "1px";
+    }
+    if (tinyv[i]) {
+    tinyy[i] += 1 + Math.random() * 3;
+    if (tinyy[i] < shigh + sdown) {
+      tiny[i].style.top = tinyy[i] + "px";
+      tinyx[i] += (i % 5 - 2) / 5;
+      tiny[i].style.left = tinyx[i] + "px";
+    }
+    else {
+      tiny[i].style.visibility = "hidden";
+      tinyv[i] = 0;
+      return;
+    }
+    }
+    else tiny[i].style.visibility = "hidden";
+    }
+    
+    document.onmousemove = mouse;
+    
+    function mouse(e) {
+    set_scroll();
+    y = (e) ? e.pageY : event.y + sdown;
+    x = (e) ? e.pageX : event.x + sleft;
+    }
+    
+    function set_scroll() {
+    if (typeof (self.pageYOffset) == "number") {
+    sdown = self.pageYOffset;
+    sleft = self.pageXOffset;
+    }
+    else if (document.body.scrollTop || document.body.scrollLeft) {
+    sdown = document.body.scrollTop;
+    sleft = document.body.scrollLeft;
+    }
+    else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+    sleft = document.documentElement.scrollLeft;
+    sdown = document.documentElement.scrollTop;
+    }
+    else {
+    sdown = 0;
+    sleft = 0;
+    }
+    }
+    
+    window.onresize = set_width;
+    
+    function set_width() {
+    if (typeof (self.innerWidth) == "number") {
+    swide = self.innerWidth;
+    shigh = self.innerHeight;
+    }
+    else if (document.documentElement && document.documentElement.clientWidth) {
+    swide = document.documentElement.clientWidth;
+    shigh = document.documentElement.clientHeight;
+    }
+    else if (document.body.clientWidth) {
+    swide = document.body.clientWidth;
+    shigh = document.body.clientHeight;
+    }
+    }
+    
+    function createDiv(height, width) {
+    var div = document.createElement("div");
+    div.style.position = "absolute";
+    div.style.height = height + "px";
+    div.style.width = width + "px";
+    div.style.overflow = "hidden";
+    div.style.backgroundColor = colour;
+    return div;
+    }
+    // ]]>
+    </script>
+    
+    
+    
+    
+    <!--everything below is now essential, everything up was sparkles-->
+    
+    <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
+    
+    <script>
+      const originalTitle = "une pas deux ";
+      let index = 0;
+    
+      function animateTitle() {
+        const title = document.title;
+        if (index < originalTitle.length) {
+          document.title = title + originalTitle[index];
+          index++;
+          setTimeout(animateTitle, 200);
+        } else {
+          setTimeout(resetTitle, 1000);
+        }
+      }
+    
+      function resetTitle() {
+        document.title = " ";
+        index = 0;
+        setTimeout(animateTitle, 1000);
+      }
+    
+      animateTitle();
+    </script>
