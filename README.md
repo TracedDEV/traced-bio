@@ -1,5 +1,5 @@
 
-This is a simple and clean looking bio page with a cursor effect and background music that i made wich is open source and currently being hosted on github.
+This is a simple and clean looking bio page with a cursor effect and background music that i made wich is open source and currently being hosted on github. - If you have any questions or problems setting it up feel free to send me a dm on my discord ***@rs6r***
 
 
 ## Preview
